@@ -11,12 +11,12 @@ sub get_version : Path('get_version') Does(ApiVersioned) {}
 
 sub get_version_1_0 {
     my ($self, $ctx) = @_;
-    $ctx->response->body('1.0');
+    $ctx->response->body("1.0\n");
 }
 
 sub get_version_1_1 {
     my ($self, $ctx) = @_;
-    $ctx->response->body('1.1');
+    $ctx->response->body("1.1\n");
 }
 
 sub foo : Path('foo') {
